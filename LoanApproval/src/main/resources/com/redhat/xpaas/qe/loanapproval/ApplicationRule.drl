@@ -2,15 +2,6 @@ package com.redhat.xpaas.qe.loanapproval
 
 import com.redhat.xpaas.qe.loanapproval.Application
 
-rule "Print every fact"
-    ruleflow-group 'approval'
-    salience 1500
-when
-    $obj: Object()
-then
-    System.out.println($obj);
-end
-
 rule "Reject people older than 60"
 ruleflow-group 'approval'
 salience 1000
